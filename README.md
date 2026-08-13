@@ -21,10 +21,10 @@ flowchart LR
     G --> H["Answer with citations"]
 ```
 
-1. **Ingest** — upload documents; they're split into chunks.
-2. **Embed** — each chunk is vectorized and stored.
-3. **Query** — type a question; the engine embeds it, runs a vector search, and returns the top matching chunks alongside the generated answer.
-4. **Inspect** — view the raw retrieved chunks to verify the search actually found relevant material.
+1. **Ingest**: upload documents; they're split into chunks.
+2. **Embed**: each chunk is vectorized and stored.
+3. **Query**: type a question; the engine embeds it, runs a vector search, and returns the top matching chunks alongside the generated answer.
+4. **Inspect**: view the raw retrieved chunks to verify the search actually found relevant material.
 
 ## Repository Layout
 
@@ -32,7 +32,7 @@ flowchart LR
 | --- | --- |
 | `src/app/` | Next.js App Router pages and API routes |
 | `src/app/api/` | Ingest, embed, and retrieval endpoints |
-| `src/lib/rag/` | The engine itself — chunking, embedding, retrieval logic |
+| `src/lib/rag/` | The engine itself: chunking, embedding, retrieval logic |
 | `src/lib/store-instance.ts` | Vector store singleton |
 
 ## Tech Decisions
